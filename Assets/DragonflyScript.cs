@@ -14,6 +14,8 @@ public class DragonflyScript : MonoBehaviour
     public GameObject flap;
     public GameObject hover;
     private int screenTime = 0;
+    public AudioSource src;
+    public AudioClip flap0, flap1, flap2;
 
     // Start is called before the first frame update
     void Start()
@@ -45,12 +47,17 @@ public class DragonflyScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        die();
+        Die();
     }
 
-    public void die()
+    public void Die()
     {
         isAlive = false;
-        logic.gameOver();
+        logic.GameOver();
+    }
+
+    private AudioClip PlaySound()
+    {
+
     }
 }

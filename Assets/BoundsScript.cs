@@ -26,7 +26,7 @@ public class BoundsScript : MonoBehaviour
     {
         if (collision.gameObject.layer == 3)
         {
-            dragonfly.die();
+            dragonfly.Die();
         }
     }
 
