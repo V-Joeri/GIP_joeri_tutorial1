@@ -8,6 +8,8 @@ public class LogicScript : MonoBehaviour
     public int playerScore;
     public Text scoreText;
     public GameObject GameOverScreen;
+    public AudioSource src;
+    public AudioClip interact;
     [ContextMenu("Increase Player Score")]
     public void AddScore(int scoreToAdd)
     {
@@ -17,6 +19,8 @@ public class LogicScript : MonoBehaviour
 
     public void RestartGame()
     {
+        src.clip = interact;
+        src.Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -27,6 +31,8 @@ public class LogicScript : MonoBehaviour
 
     public void ReturnToMenu()
     {
+        src.clip = interact;
+        src.Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }

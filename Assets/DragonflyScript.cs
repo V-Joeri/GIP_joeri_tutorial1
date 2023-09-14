@@ -32,6 +32,7 @@ public class DragonflyScript : MonoBehaviour
             myRigidbody.velocity = Vector2.up * flapStrength;
             flap.SetActive(true);
             hover.SetActive(false);
+            PlaySound();
         }
         else if (screenTime < 25)
         {
@@ -56,8 +57,23 @@ public class DragonflyScript : MonoBehaviour
         logic.GameOver();
     }
 
-    private AudioClip PlaySound()
+    public void PlaySound()
     {
-
+        int rnd = Random.Range(0, 3);
+        if (rnd == 0)
+        {
+            src.clip = flap0;
+            src.Play();
+        }
+        else if (rnd == 1)
+        {
+            src.clip = flap1;
+            src.Play();
+        }
+        else
+        {
+            src.clip = flap2;
+            src.Play();
+        }
     }
 }

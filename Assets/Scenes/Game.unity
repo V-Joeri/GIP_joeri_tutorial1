@@ -160,6 +160,10 @@ MonoBehaviour:
   isAlive: 0
   flap: {fileID: 530896317}
   hover: {fileID: 1597790519}
+  src: {fileID: 610072680}
+  flap0: {fileID: 8300000, guid: ba662afd10a825c4e9ec5d025eaaba87, type: 3}
+  flap1: {fileID: 8300000, guid: 87969df4d7bafd748872acd41fac31bc, type: 3}
+  flap2: {fileID: 8300000, guid: 93aea6b9bd9a7264caa83e94c31a9d08, type: 3}
 --- !u!58 &63898348
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -231,7 +235,7 @@ Transform:
   m_GameObject: {fileID: 63898346}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -532,7 +536,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 19}
+  m_Offset: {x: 0, y: 18}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -964,7 +968,7 @@ Transform:
   m_GameObject: {fileID: 486742163}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.87559456, y: 0.36298496, z: 0.22099243}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1618,7 +1622,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -19}
+  m_Offset: {x: 0, y: -18}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1826,6 +1830,8 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 151679024}
   GameOverScreen: {fileID: 236151746}
+  src: {fileID: 610072680}
+  interact: {fileID: 8300000, guid: 55f3d71619a69af44be41aaa5e032e79, type: 3}
 --- !u!4 &2114606180
 Transform:
   m_ObjectHideFlags: 0
